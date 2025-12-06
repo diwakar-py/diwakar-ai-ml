@@ -88,14 +88,14 @@ export const profile = {
         'Skills applied: C, C++, Flask, OOP, RDBMS, Problem Solving, SQL, MongoDB, Python.',
       ],
     },
-    {
-      institution: 'Bharathidhaasan Metric Higher Secondary School',
-      degree: 'Higher Secondary Education',
-      duration: '2007 – 2020',
-      details: [
-        'Core focus: Programming fundamentals and problem solving (C, C++, RDBMS, Python).',
-      ],
-    },
+    // {
+    //   institution: 'Bharathidhaasan Metric Higher Secondary School',
+    //   degree: 'Higher Secondary Education',
+    //   duration: '2007 – 2020',
+    //   details: [
+    //     'Core focus: Programming fundamentals and problem solving (C, C++, RDBMS, Python).',
+    //   ],
+    // },
   ],
   certifications: [
     {
