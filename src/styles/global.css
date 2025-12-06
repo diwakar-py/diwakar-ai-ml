@@ -52,6 +52,59 @@ body {
   overflow-x: hidden;
 }
 
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.65;
+  transition: opacity var(--transition);
+}
+
+body::before {
+  background-image: radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.25), transparent 50%),
+    radial-gradient(circle at 80% 10%, rgba(99, 102, 241, 0.22), transparent 45%),
+    radial-gradient(circle at 70% 80%, rgba(34, 197, 94, 0.18), transparent 50%),
+    radial-gradient(circle at 5% 75%, rgba(14, 165, 233, 0.15), transparent 40%);
+  mix-blend-mode: screen;
+  animation: drift 30s ease-in-out infinite alternate;
+}
+
+body::after {
+  background-image: linear-gradient(120deg, rgba(14, 165, 233, 0.08) 0%, rgba(14, 165, 233, 0) 60%),
+    repeating-linear-gradient(90deg, rgba(15, 23, 42, 0.05) 0, rgba(15, 23, 42, 0.05) 1px, transparent 1px, transparent 120px),
+    repeating-linear-gradient(0deg, rgba(15, 23, 42, 0.04) 0, rgba(15, 23, 42, 0.04) 1px, transparent 1px, transparent 120px);
+  filter: blur(0.5px);
+  opacity: 0.55;
+  animation: parallaxFlow 45s linear infinite;
+}
+
+[data-theme="dark"] body::after {
+  background-image: linear-gradient(120deg, rgba(56, 189, 248, 0.08) 0%, rgba(56, 189, 248, 0) 60%),
+    repeating-linear-gradient(90deg, rgba(148, 163, 184, 0.07) 0, rgba(148, 163, 184, 0.07) 1px, transparent 1px, transparent 120px),
+    repeating-linear-gradient(0deg, rgba(148, 163, 184, 0.05) 0, rgba(148, 163, 184, 0.05) 1px, transparent 1px, transparent 120px);
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(-2%, -2%, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(2%, 1%, 0) scale(1.05);
+  }
+}
+
+@keyframes parallaxFlow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: -200px -200px, 120px 0, 0 120px;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -283,10 +336,10 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.7rem 1.4rem;
+  padding: 5px 10px;
   background: var(--color-accent);
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   border: 1px solid var(--color-accent);
   transition: background var(--transition), color var(--transition);
 }

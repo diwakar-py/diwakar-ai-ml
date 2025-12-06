@@ -24,7 +24,7 @@ const sections = [
 ];
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
