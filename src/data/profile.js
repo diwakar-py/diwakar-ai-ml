@@ -15,10 +15,11 @@ export const profile = {
   heroIntro:
     'Full Stack Developer at ExcelGoodies delivering data-intensive applications, Azure data engineering workloads, and applied ML/AI prototypes that unlock business insights.',
   resumeLink: '#',
-  about: [
-    'Diwakar is a Full Stack Developer at ExcelGoodies with 2+ years of experience building scalable applications, dashboards, and cloud solutions. He works extensively with Power BI, CI/CD pipelines, Azure services (ADF, Databricks, Synapse, Data Lake, Functions, Containers), and AI/ML proof-of-concepts.',
-    'He aims to grow as a Data Engineer, Data Scientist, ML Engineer, or AI Engineer by combining software craftsmanship with strong data and AI skills, while staying open to data, AI, ML, and cloud engineering opportunities.',
-  ],
+ about: [
+  "Hi, I’m Diwakar — a Data & AI focused engineer with around 2+ years of hands-on experience. I started my career as a Junior Programmer, working with Python, SQL, and data workflows, and later grew into a Software Developer role where I contributed to enterprise CRM systems, data engineering pipelines, and AI/ML solutions. I work across Python, SQL, Azure Data services (ADF, Databricks, Synapse, Data Lake), Power BI, and modern development tools. I enjoy building data-driven features, experimenting with LLMs and Generative AI, and creating end-to-end solutions that bring real value to products.",
+  "I’m currently exploring opportunities in Data Engineering, Data Science, ML Engineering, and AI Engineering — roles where I can blend software engineering with data, cloud, and AI tech to build impactful systems.",
+],
+
   infoHighlights: [
     { label: 'Location', value: 'Chennai, Tamil Nadu, India' },
     { label: 'Experience', value: '2+ Years' },

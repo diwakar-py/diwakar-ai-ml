@@ -324,11 +324,6 @@ p {
 }
 
 /* About */
-.about-content {
-  display: grid;
-  gap: 1rem;
-}
-
 .info-grid {
   margin-top: 2rem;
   display: grid;
