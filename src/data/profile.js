@@ -28,30 +28,43 @@ export const profile = {
   experience: [
     {
       company: 'ExcelGoodies Consulting, Inc.',
-      role: 'Software Developer | End-to-End Development, Data Migration & Azure Data Engineering',
-      duration: 'May 2023 – Present',
+      role: 'Software Developer (Data & AI / Data Engineering)',
+      duration: 'May 2025 – Present',
       location: 'Chennai, Tamil Nadu, India',
       highlights: [
-        'Developed scalable web applications with React, .NET Core, and SQL Server for enterprise insurance platforms.',
-        'Built Power BI dashboards & data models, enabling actionable insights and faster decision-making.',
-        'Optimized backend handling of 100K+ records, reducing API response times by ~40%.',
-        'Created reusable React components and implemented API-driven dynamic forms using react-hook-form.',
-        'Delivered end-to-end features like file uploads, schema rendering, and Azure Blob Storage integration.',
-        'Automated reporting with Power BI Service and scheduled refreshes via data gateways.',
-        'Used Python for EDA, model building, and Generative AI experiments (OpenAI APIs, Azure Cognitive Services).',
-        'Contributed to an internal AI working group, prototyping ML/GenAI features for enterprise use cases.',
+        'Architected and shipped enterprise CRM applications spanning React front-ends, .NET Core APIs, and SQL Server data services with embedded analytics.',
+        'Built data-heavy workflow components, orchestrating advanced Python + SQL services for classification pipelines, tagging engines, and automated reporting.',
+        'Owned Azure data engineering workstreams across ADF, Databricks, Synapse, and Data Lake to productionize ingestion, transformation, and monitoring.',
+        'Embedded LLM-driven helpers and GenAI features into internal tools, rapidly prototyping POCs for search, summarization, and knowledge extraction.',
+        'Designed Power BI data models/dashboards consumed by leadership, integrating incremental refresh, row-level security, and governance.',
+        'Led CI/CD modernization, automated schema migrations, and hardened data quality guards for mission-critical CRM and analytics workloads.',
       ],
       tags: [
+        'Enterprise CRM',
         'React',
         '.NET Core',
         'SQL Server',
-        'Power BI',
-        'Azure',
-        'ADF',
+        'Python',
+        'Azure ADF',
         'Databricks',
-        'GenAI',
-        'CI/CD',
+        'Synapse',
+        'Power BI',
+        'Generative AI',
       ],
+    },
+    {
+      company: 'ExcelGoodies Consulting, Inc.',
+      role: 'Junior Programmer (Data & AI Focus)',
+      duration: 'May 2023 – Apr 2025',
+      location: 'Chennai, Tamil Nadu, India',
+      highlights: [
+        'Wrote Python and SQL utilities that cleaned, validated, and pre-processed raw customer datasets for downstream analytics teams.',
+        'Automated lightweight ETL steps and assisted senior engineers with building and monitoring Azure-based data pipelines.',
+        'Implemented simple classification/tagging scripts plus feature extraction notebooks to support experimentation across ML workflows.',
+        'Built helper services that enriched datasets, generated reports, and surfaced QA signals for analysts and data scientists.',
+        'Explored AI/ML concepts through lab projects, documenting learnings on model evaluation, prompt engineering, and deployment basics.',
+      ],
+      tags: ['Python', 'SQL', 'ETL', 'Pipelines', 'ML Ops Support', 'Azure'],
     },
   ],
   education: [
@@ -119,16 +132,11 @@ export const profile = {
       issued: 'Apr 2025',
     },
     {
-      name: 'Introduction to Programming Using Java',
-      issuer: 'Spoken Tutorial, EduPyramids, SINE, IIT Bombay',
-      issued: 'Apr 2022',
-      skill: 'Java',
-    },
-    {
       name: 'Introduction to Programming Using Python',
       issuer: 'IIITDM Jabalpur',
       issued: 'Jan 2022',
       skill: 'Python',
+      highlight: true,
     },
     {
       name: 'Advanced CPP',
@@ -152,69 +160,82 @@ export const profile = {
     ],
     groups: [
       {
-        name: 'Core Programming',
+        name: 'Data Engineering',
         items: [
-          { name: 'Python', filters: ['data', 'ml-ai', 'backend'] },
-          { name: 'C', filters: ['backend'] },
-          { name: 'C++', filters: ['backend'] },
-          { name: 'Java', filters: ['backend'] },
-          { name: 'C#', filters: ['backend'] },
-        ],
-      },
-      {
-        name: 'Web & Frontend',
-        items: [
-          { name: 'React.js', filters: ['frontend'] },
-          { name: 'HTML5', filters: ['frontend'] },
-          { name: 'CSS', filters: ['frontend'] },
-          { name: 'JavaScript', filters: ['frontend'] },
-        ],
-      },
-      {
-        name: 'Data & Databases',
-        items: [
-          { name: 'SQL', filters: ['data'] },
-          { name: 'Microsoft SQL Server', filters: ['data'] },
-          { name: 'MongoDB', filters: ['data'] },
-          { name: 'RDBMS Concepts', filters: ['data'] },
+          { name: 'PySpark', filters: ['data', 'ml-ai'] },
+          { name: 'Databricks', filters: ['data', 'ml-ai'] },
+          { name: 'CI/CD & Data Pipelines', filters: ['data', 'cloud'] },
           { name: 'SSIS', filters: ['data'] },
         ],
       },
       {
-        name: 'Data & Analytics Tools',
+        name: 'Data Science & Analytics',
+        items: [
+          { name: 'Data Science', filters: ['data'] },
+          { name: 'Data Modelling', filters: ['data'] },
+        ],
+      },
+      {
+        name: 'Machine Learning',
+        items: [{ name: 'Machine Learning', filters: ['data', 'ml-ai'] }],
+      },
+      {
+        name: 'Generative AI & LLMs',
+        items: [
+          { name: 'Generative AI', filters: ['ml-ai'] },
+          { name: 'LLM Experimentation', filters: ['ml-ai'] },
+        ],
+      },
+      {
+        name: 'Python Engineering',
+        items: [{ name: 'Python', filters: ['data', 'ml-ai', 'backend'] }],
+      },
+      {
+        name: 'SQL & Databases',
+        items: [
+          { name: 'SQL', filters: ['data'] },
+          { name: 'Microsoft SQL Server', filters: ['data'] },
+          { name: 'RDBMS Concepts', filters: ['data'] },
+          { name: 'MongoDB', filters: ['data'] },
+        ],
+      },
+      {
+        name: 'Azure Data Stack',
+        items: [
+          { name: 'Azure Data Factory (ADF)', filters: ['data', 'cloud'] },
+          { name: 'Azure Synapse', filters: ['data', 'cloud'] },
+          { name: 'Azure Data Lake', filters: ['data', 'cloud'] },
+          { name: 'Microsoft Azure', filters: ['cloud'] },
+        ],
+      },
+      {
+        name: 'Power BI & Analytics',
         items: [
           { name: 'Microsoft Power BI', filters: ['data'] },
           { name: 'Microsoft Excel', filters: ['data'] },
         ],
       },
       {
-        name: 'AI, ML & Data Engineering',
+        name: 'AI/ML/Data Engineering Tools',
         items: [
-          { name: 'Machine Learning', filters: ['data', 'ml-ai'] },
-          { name: 'Generative AI', filters: ['ml-ai'] },
-          { name: 'PySpark', filters: ['data', 'ml-ai'] },
-          { name: 'Databricks', filters: ['data', 'ml-ai'] },
-          { name: 'Azure Data Factory (ADF)', filters: ['data', 'cloud'] },
-          { name: 'Azure Synapse', filters: ['data', 'cloud'] },
-          { name: 'Azure Data Lake', filters: ['data', 'cloud'] },
-          { name: 'CI/CD & Data Pipelines', filters: ['data', 'cloud'] },
-        ],
-      },
-      {
-        name: 'Cloud & DevOps',
-        items: [
-          { name: 'Microsoft Azure', filters: ['cloud'] },
           { name: 'Azure Functions', filters: ['cloud'] },
           { name: 'Containers / Docker', filters: ['cloud'] },
+          { name: 'Postman API', filters: ['backend'] },
         ],
       },
       {
-        name: 'Software Engineering & Tools',
+        name: 'Engineering & Frontend',
         items: [
+          { name: 'React.js', filters: ['frontend'] },
+          { name: 'HTML5', filters: ['frontend'] },
+          { name: 'CSS', filters: ['frontend'] },
+          { name: 'JavaScript', filters: ['frontend'] },
+          { name: 'C#', filters: ['backend'] },
+          { name: 'C', filters: ['backend'] },
+          { name: 'C++', filters: ['backend'] },
           { name: 'Flask', filters: ['backend'] },
           { name: 'Object-Oriented Programming (OOP)', filters: ['backend'] },
           { name: 'Git & GitHub', filters: ['backend'] },
-          { name: 'Postman API', filters: ['backend'] },
           { name: 'Problem Solving', filters: ['backend'] },
         ],
       },
@@ -225,4 +246,3 @@ export const profile = {
     linkedin: 'https://www.linkedin.com/in/diwakar-ai-ml',
   },
 };
-

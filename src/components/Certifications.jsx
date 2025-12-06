@@ -20,6 +20,7 @@ const Certifications = ({ certifications }) => {
               key={`${cert.name}-${cert.issuer}`}
               className={`cert-card ${cert.highlight ? 'featured' : ''}`}
             >
+              <div>
               {cert.highlight && <span className="badge">Featured</span>}
               <h3>{cert.name}</h3>
               <p className="issuer">{cert.issuer}</p>
@@ -31,6 +32,7 @@ const Certifications = ({ certifications }) => {
               {cert.credentialId && (
                 <p className="detail">Credential ID: {cert.credentialId}</p>
               )}
+              </div>
               <button className="btn ghost">
                 <FiExternalLink />
                 View Credential

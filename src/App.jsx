@@ -9,6 +9,7 @@ import Certifications from './components/Certifications';
 import Awards from './components/Awards';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CursorGlow from './components/CursorGlow';
 import { profile } from './data/profile';
 
 const sections = [
@@ -63,6 +64,7 @@ function App() {
 
   return (
     <>
+      <CursorGlow />
       <Navbar
         sections={sections}
         activeSection={activeSection}
@@ -86,4 +88,3 @@ function App() {
 }
 
 export default App;
-
