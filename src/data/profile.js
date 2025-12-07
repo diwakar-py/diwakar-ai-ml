@@ -1,7 +1,7 @@
 export const profile = {
   name: "Diwakar S",
   location: "Chennai, Tamil Nadu, India",
-  email: "diwakar30122002@gmail.com",
+  email: "diwakar3012@gmail.com",
   linkedin: "https://www.linkedin.com/in/diwakar-ai-ml",
   tagline:
     "Software Developer (Data & AI Focus) | ML/DS/DL Enthusiast | Azure Data Engineer | Python, PySpark, Databricks, ADF, Synapse, Power BI | Microsoft Certified (DP-203)",
@@ -100,15 +100,7 @@ export const profile = {
         "Leadership: Core organizer of an internal college hackathon; active participant in tech fests, seminars, and developer communities.",
         "Skills applied: C, C++, Flask, OOP, RDBMS, Problem Solving, SQL, MongoDB, Python.",
       ],
-    },
-    // {
-    //   institution: 'Bharathidhaasan Metric Higher Secondary School',
-    //   degree: 'Higher Secondary Education',
-    //   duration: '2007 – 2020',
-    //   details: [
-    //     'Core focus: Programming fundamentals and problem solving (C, C++, RDBMS, Python).',
-    //   ],
-    // },
+    }
   ],
   certifications: [
     {
@@ -217,16 +209,6 @@ export const profile = {
         ],
       },
       {
-        name: "AI Tools & LLM Ecosystem",
-        items: [
-          { name: "OpenAI (ChatGPT, Codex)", filters: ["ml-ai"] },
-          { name: "Claude", filters: ["ml-ai"] },
-          { name: "Gemini", filters: ["ml-ai"] },
-          { name: "Perplexity", filters: ["ml-ai"] },
-          { name: "AI API Integration", filters: ["ml-ai", "backend"] },
-        ],
-      },
-      {
         name: "SQL & Databases",
         items: [
           { name: "SQL", filters: ["data", "backend"] },
@@ -281,7 +263,7 @@ export const profile = {
     ],
   },
   contact: {
-    email: "diwakar30122002@gmail.com",
+    email: "diwakar3012@gmail.com",
     linkedin: "https://www.linkedin.com/in/diwakar-ai-ml",
   },
 };
